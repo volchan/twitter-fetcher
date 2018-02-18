@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.5.0'
+
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
@@ -20,6 +22,7 @@ gem 'simple_form'
 gem 'twitter'
 gem 'uglifier', '>= 1.3.0'
 gem 'webpacker'
+gem 'pry-rails'
 
 group :development, :test do
   gem 'better_errors'
@@ -27,7 +30,6 @@ group :development, :test do
   gem 'capybara', '~> 2.13'
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'pry-byebug'
-  gem 'pry-rails'
   gem 'selenium-webdriver'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
